@@ -1,0 +1,43 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #1c1e1f;
+  }
+  
+  p,
+  h2,
+  h5,
+  h1 {
+    color: #d1cdc7;
+  }
+  
+  li,
+  a {
+    color: #7deda5;
+  }
+
+  /* referencia por ID */
+  #Parrafoazul {
+    color:aqua
+  }
+
+  /*referencia por Clase */
+  .textoVerde {
+    color: green;
+    font-size: 12px;
+  }
+
+  .textoSubrayado{
+    text-decoration: underline;
+  }
+
+/* 
+    Orden
+      (Excepciones) estilos en linea
+      1: selector de ID
+      2: selector de clase
+      3: selector de etiqueta
+*/
+

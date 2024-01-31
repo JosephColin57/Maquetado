@@ -34,3 +34,62 @@ color: red;
 #selectorHermanoAdyacente h2 + h3 {
     color: yellow;
 }
+
+/*Selector de atributo*/
+a[href="https://kodemia.mx"],[href="https://www.google.com"]{
+    text-decoration: none;
+}
+
+input[type="text"]{
+    width: 100px;
+    padding: 1px;
+}
+
+#pseudoselectores .btn {
+    background-color: #454556;
+    color: white;
+    border: none;
+    padding: 5px;
+}
+
+#pseudoselectores .btn:hover{
+    width: 200px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: line-through;
+}
+
+#Enlaces a:visited{
+    color: green;
+}
+
+#Enlaces a:link{
+    color:red
+}
+
+.caja {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+#listas div:first-child {
+    background-color: blue;
+    color: white;
+}
+
+#listas div:last-child {
+    background-color: green;
+}
+
+#listas div:nth-child(3){
+    background-color: black;
+    color: white;
+}

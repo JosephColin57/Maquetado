@@ -1,0 +1,36 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contenedor{
+    background-color: #e3e3e3;
+    border: 1px solid red; /* dashed es para lineas punteadas, dotted son puntos*/ 
+    padding: 12px; /*50 px espaciados en todas direcciones en forma de las manecillas de un reloj*/
+    margin: 50px; /*50 px espaciados en todas direcciones en forma de las manecillas de un reloj*/
+    margin: 10px 20px 50px; /*Ejemplo*/
+}
+
+/*Selector Hijo*/
+/*Aplica todo lo que este dentro de donde se ponga el selector*/
+#selectorHijo p {
+    color: blue;
+}
+
+/*Selector hijo directo*/
+
+#selectorHijoDirecto > p {
+color: red;
+}
+
+/*Selector hermano general*/
+
+#selectorHermanoGeneral h2 ~ button {
+    background-color: blue;
+    color: white;
+}
+
+/*selector hermano adyacente*/
+
+#selectorHermanoAdyacente h2 + h3 {
+    color: yellow;
+}

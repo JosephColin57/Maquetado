@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--HTML: Se considera el papa-->
+<html lang="es">
+    <!--HEAD:Se considera el hijo y se hereda lo que afecte a HTML-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!--Para conectar el archivo de CSS-->
+        <link rel="stylesheet" href="./CSS/style.css"
+    </head>
+        <body>
+           <!--Header: Encabezado, 
+                parte superior de la pagina 
+                logo de la pagina
+                menu principal de navegacion--> 
+            <header>
+                   <h1>Selectores avanzados</h1> 
+            </header>
+            <!--Main :El contenido principal de la pagina
+                un texto una imagen -->
+            <main>
+                <section id="selectorHijo" class="contenedor">
+                    <h2>Selector hijo</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem laborum corrupti quo nostrum maxime? Laudantium est fugit, eveniet quia repellat ex ratione laboriosam nesciunt? Sed, atque. Ab culpa a itaque!</p>
+                </section>
+                    <!--Selector hijo directo-->
+                <section id="selectorHijoDirecto" class="contenedor">
+                    <h2>Selector hijo directo</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate sit porro fugiat, autem perferendis doloremque non molestias quasi doloribus ut. Harum inventore labore cumque distinctio laboriosam cupiditate itaque. Vel, dignissimos.</p>
+                    <div>
+                        <p>
+                            Parrafo nieto
+                        </p>
+                    </div>
+                    <p>
+                        Parrafo hijo 2
+                    </p>
+                </section>
+                <!--Selector hermano general-->
+                <section id="selectorHermanoGeneral" class="contenedor">
+                    <h2>Selector hermano general</h2>
+                    <button>click me</button>
+                    <span>span hermano</span>
+                    <div>
+                        <button>click me</button>
+                    </div>
+                    <button>buton hermano</button>
+                </section>
+                <section id="selectorHermanoAdyacente" class="contenedor">
+                    <h2>Selector hermano adyacente </h2>
+                    <h3>titulo h3 hijo</h3>
+                    <p>parrafo hijo</p>
+                    <div>
+                        <h3>titulo h3 nietos</h3>
+                        <p>parrafo nieto</p>
+                    </div>
+                    <h2>titulo h2 2</h2>
+                    <h3> titulo h3 2</h3>
+                </section>
+            </main>
+        </body>
+</html>

@@ -1,0 +1,52 @@
+.caja{
+    width: 100px;
+    height: 60px;
+    background-color: cadetblue;
+    margin: 20px 0;
+}
+
+/*Solo se pueden seleciionar dos lados para que funcione*/
+/*se inicia de la esquina superior izquierda*/
+/*Se mueve 30px de la objeto padre*/
+.cajaRelativa{
+    position: relative;
+    top: -30px;
+    left: 30px;
+    right: 0;
+    bottom: 0;
+}
+
+
+/* Se tiene que tener un etiqueta padre relativa*/
+.cajaAbsoluta{
+    background-color: yellow;
+    position: absolute;
+    top: 0;
+    margin: 0;
+    right: 0;
+}
+
+/*Solo se quedaria fijo y se moveria con el scroll*/
+/*z-index es para sobreponer la caja sobre las demas*/
+.cajaFixed{
+    position: fixed;
+    background-color: rgb(red, green, blue);
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.stickyContainer{
+    border: 5px solid blue; 
+}
+
+.positionSticky{
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    border: 1px solid blue;
+    background-color: white;
+}
+
+

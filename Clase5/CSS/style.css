@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+/* 
+
+
+ */
+
+.contenedorNoResponsivo{
+    width: 400px;
+    height: 200px;
+    background-color: aquamarine;
+}
+
+body{
+    background-color: white;
+}
+
+.contenedorResponsivo{
+        margin-top: 10px;
+        width: 80%;
+        height: 200px;
+        background-color: blue;
+}
+
+.cajaMorada{
+    background-color: purple;
+    height: 100px;
+    max-width: 300px;
+}
+
+/*media querys*/
+/* @media screen and (max-width:600px){
+    body{
+        background-color: black;
+    }
+
+.cajaMorada{
+    width: 45%;
+    height: 400px;
+}
+} */
+
+/* Estilos para tablet */
+@media screen and (min-width:768px) {
+    .contenedorNoResponsivo{
+        background-color: green;
+    }
+}
+
+/* Para laptops normales*/
+@media screen and (min-width:992px){
+    .contenedorNoResponsivo{
+        background-color: red;
+        height: 500px;
+    }
+}
+
+/* Estilos para laptop HD */
+@media screen and (min-width:1440px) {
+    .contenedorNoResponsivo{
+        background-color: yellow;
+
+    }
+}

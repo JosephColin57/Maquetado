@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+.Contenedor{
+    width: 400px;
+    height: 200px;
+    background-color: aquamarine;
+}
+
+/* Estilos para tablet */
+@media screen and (min-width:768px) {
+    .Contenedor{
+        background-color: green;
+    }
+    .mobile{
+        display: block;
+    }
+
+    .tablet{
+        display: none;
+    }
+    .desktop{
+        display: none;
+    }
+    .xxl{
+        display: none;
+    }
+}
+
+/* Para laptops normales*/
+@media screen and (min-width:992px){
+    .Contenedor {
+        background-color: red;
+    }
+    .mobile{
+        display: none;
+    }
+
+    .tablet{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
+    .xxl{
+        display: none;
+    }
+}
+
+/* Estilos para laptop HD */
+@media screen and (min-width:1440px) {
+    .Contenedor{
+        background-color: yellow;
+    }
+    .mobile{
+        display: none;
+    }
+
+    .tablet{
+        display: none;
+    }
+    .desktop{
+        display: block;
+    }
+    .xxl{
+        display: none;
+    }
+}
+
+/* Estilos para laptop HD */
+@media screen and (min-width:1980px) {
+    .Contenedor{
+        background-color: black;
+        color: white;
+    }
+    .mobile{
+        display: none;
+    }
+
+    .tablet{
+        display: none;
+    }
+    .desktop{
+        display: none;
+    }
+    .xxl{
+        display: block;
+        color: white;
+    }
+}

@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos base mobile */
+
+body{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(218,212,224,1) 100%, rgba(0,212,255,1) 100%);
+    min-height: 100vh;
+}
+
+    header h1{
+    text-align: center;
+}
+
+main{
+    width: 100%;
+    color: white;
+}
+
+.bloglist{
+    border: 1px solid black;
+    padding: 10px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.post{
+    background-color: #181a1b;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* tablets  */
+@media screen and (min-width:768px) {
+    .post{
+        width: 45%;
+        display: inline-block;
+        margin: 20px 0.5%;
+    }   
+}
+

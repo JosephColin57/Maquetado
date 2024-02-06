@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>HTML documentacion</title>
+  </head>
+  <body>
+    <!-- seccion de enlaces -->
+    <section class="enlaces">
+      <ul>
+        <li class="listItem">
+            <a href="#encabezados">#1.Encabezados</a></li>
+        <li class="listItem">
+            <a href="#parrafos" class="linkItem">#2.Parrafos</a></li>
+        <li class="listItem">
+            <a href="#Time" class="linkItem">#3.Time</a></li>
+        <li class="listItem">
+            <a href="#Video" class="linkItem">#4.Video</a></li>
+        <li class="listItem">
+            <a href="#object" class="linkItem">#5.Object</a></li>
+        <li class="listItem">
+            <a href="#menu" class="linkItem">#6.Menu</a></li>
+        <li class="listItem">
+            <a href="#hgroup" class="linkItem">#7.Hgroup</a></li>
+        <li class="listItem">
+            <a href="#dialog" class="linkItem">#8.Dialog</a></li>
+        <li class="listItem">
+            <a href="#audio" class="linkItem">#9.Audio</a></li>
+        <li class="listItem">
+            <a href="#address" class="linkItem">#10.Address</a></li>
+      </ul>
+    </section>
+    <main class="docsContainer">
+      <!-- primer bloque de contenido -->
+      <section id="encabezados" class="bloqueDocumentacion">
+        <article class="docItem">
+          <h3>Encabezados (h1 - h6)</h3>
+          <p>
+            Las etiquetas &lt;h1&gt; to &lt;h6&gt; se utilizan para definir
+            encabezados HTML. <br />
+            <b> &lt;h1&gt; </b> Define el título más importante.
+            <br />
+            <b> &lt;h6&gt; </b>Define el encabezado menos importante.
+            <br />Nota: Utilice solo uno &lt;h1&gt; por página; este debe
+            representar el título/asunto principal de toda la página. Además, no
+            se salte los niveles de encabezado: comience con &lt;h1&gt;, luego
+            use &lt;h2&gt;, y así sucesivamente.
+          </p>
+          <p>Ejemplo de uso</p>
+          <div class="codeExampleContainer">
+            <code class="codeExample">&lt;h1&gt; encabezado &lt;/h1&gt;</code>
+          </div>
+        </article>
+      </section>
+      <!-- aqui termina el primer bloque -->
+
+      <!-- segundo bloque de contenido -->
+      <section id="parrafos" class="bloqueDocumentacion">
+        <article class="docItem">
+          <h3 class="docItemTitle">Parrafos (p)</h3>
+          <p class="docItemDescription">
+            La etiqueta &lt;p&gt; define un párrafo.
+
+                Los navegadores agregan automáticamente una sola línea en blanco antes y después de cada elemento &lt;p&gt;.
+          </p>
+          <p>Ejemplo de uso</p>
+          <div class="codeExampleContainer">
+            <code class="codeExample">&lt;p&gt; parrafo &lt;/p&gt;</code>
+          </div>
+        </article>
+      </section>
+      <!-- aqui termina el segundo bloque -->
+      <!-- Tercer Bloque -->
+      <section id="Time" class="bloqueDocumentacion">
+        <article class="docItem">
+          <h3 class="docItemTitle">Time</h3>
+          <p class="docItemDescription">
+            La etiqueta &lt;Time&gt define una hora específica (o fecha y hora).
+
+                El atributo de fecha y hora de este elemento se utiliza para traducir la hora a un formato legible por máquina para que los navegadores puedan ofrecer agregar recordatorios de fechas a través del calendario del usuario y los motores de búsqueda puedan producir resultados de búsqueda más inteligentes.
+          </p>
+          <p>Ejemplo de uso</p>
+          <div class="codeExampleContainer">
+            <code class="codeExample"> &lt;time&gt; &lt;p&gt; Open from &lt;time&gt; 10:00 &lt;/time&gt; to &lt;time&gt; 21:00 &lt;/time&gt; every weekday.&lt;/p&gt; &lt;/time&gt; </code>
+          </div>
+        </article>
+      </section>
+      <!-- Fin tercer bloque -->
+      <!-- Cuarto bloque -->
+      <section id="Video" class="bloqueDocumentacion">
+        <article class="docItem">
+          <h3 class="docItemTitle">Video</h3>
+          <p class="docItemDescription">
+            La etiqueta &lt;video&gt; se utiliza para incrustar contenido de video en un documento, como un clip de película u otras secuencias de video.
+
+                La etiqueta &lt;video&gt; contiene una o más etiquetas &lt;source&gt; con diferentes fuentes de video. El navegador elegirá la primera fuente que admita.
+                
+                El texto entre las etiquetas &lt;video&gt; y &lt;/video&gt; solo se mostrará en navegadores que no admitan el elemento &lt;video&gt;.
+                
+                Hay tres formatos de vídeo compatibles con HTML: MP4, WebM y OGG.
+          </p>
+          <p>Ejemplo de uso</p>
+          <div class="codeExampleContainer">
+            <code class="codeExample"> 
+                &lt;video width="320" height="240" controls&gt;
+                &lt;source src="movie.mp4" type="video/mp4"&gt;
+                &lt;source src="movie.ogg" type="video/ogg"&gt;
+                Your browser does not support the video tag.
+              &lt;/video&gt; </code>
+          </div>
+        </article>
+      </section>
+      <!-- Fin Cuarto Bloque -->
+      <!-- Quinto Bloque -->
+      <section id="object" class="bloqueDocumentacion">
+        <article class="docItem">
+          <h3 class="docItemTitle">Object</h3>
+          <p class="docItemDescription">
+            
+                La etiqueta &lt;object&gt; define un contenedor para un recurso externo.
+
+                El recurso externo puede ser una página web, una imagen, un reproductor multimedia o una aplicación complementaria.
+          </p>
+          <p>Ejemplo de uso</p>
+          <div class="codeExampleContainer">
+            <code class="codeExample"> 
+                &lt;object data="pic_trulli.jpg" width="300" height="200"&gt;&lt;/object&gt;
+            </code>
+          </div>
+        </article>
+      </section>
+      <!-- Fin Quinto bloque -->
+      <!-- Sexto Bloque -->
+      <section id="menu" class="bloqueDocumentacion">
+        <article class="docItem">
+          <h3 class="docItemTitle">Menu</h3>
+          <p class="docItemDescription">
+            
+            La etiqueta &lt;menu&gt; define una lista desordenada de contenido.
+
+                Utilice la etiqueta &lt;menu&gt; junto con la etiqueta &lt;li&gt; para crear elementos de menú.
+          </p>
+          <p>Ejemplo de uso</p>
+          <div class="codeExampleContainer">
+            <code class="codeExample"> 
+                &lt;menu&gt;
+                    &lt;li&gt;Coffee&lt;/li&gt;
+                    &lt;li&gt;Tea&lt;/li&gt;
+                    &lt;li&gt;Milk&lt;/li&gt;
+                  &lt;/menu&gt;
+            </code>
+          </div>
+        </article>
+      </section>
+      <!-- Fin Sexto bloque -->
+      <!-- Septimo Bloque -->
+      <section id="hgroup" class="bloqueDocumentacion">
+        <article class="docItem">
+          <h3 class="docItemTitle">Hgroup</h3>
+          <p class="docItemDescription">
+            
+            La etiqueta &lt;hgroup&gt; se utiliza para rodear un encabezado y uno o más elementos &lt;p&gt;.
+
+                El encabezado dentro del elemento &lt;hgroup&gt; puede ser cualquiera de los encabezados &lt;h1&gt; a &lt;h6&gt;.
+          </p>
+          <p>Ejemplo de uso</p>
+          <div class="codeExampleContainer">
+            <code class="codeExample"> 
+                &lt;hgroup&gt;
+                    &lt;h2&gt;Norway&lt;/h2&gt;
+                    &lt;p&gt;The land with the midnight sun.&lt;/p&gt;
+                  &lt;/hgroup&gt;
+            </code>
+          </div>
+        </article>
+      </section>
+      <!-- Fin Septimo bloque -->
+       <!-- Octavo Bloque -->
+       <section id="dialog" class="bloqueDocumentacion">
+        <article class="docItem">
+          <h3 class="docItemTitle">Dialog</h3>
+          <p class="docItemDescription">
+            
+            La etiqueta &lt;dialog&gt; define un cuadro de diálogo o una subventana.
+
+                El elemento &lt;dialog&gt; facilita la creación de cuadros de diálogo emergentes y modales en una página web.
+          </p>
+          <p>Ejemplo de uso</p>
+          <div class="codeExampleContainer">
+            <code class="codeExample"> 
+                &lt;dialog open&gt;This is an open dialog window&lt;/dialog&gt;
+            </code>
+          </div>
+        </article>
+      </section>
+      <!-- Fin Octavo bloque -->
+      <!-- Noveno Bloque -->
+      <section id="audio" class="bloqueDocumentacion">
+        <article class="docItem">
+          <h3 class="docItemTitle">Audio</h3>
+          <p class="docItemDescription">
+            
+            La etiqueta &lt;audio&gt; se utiliza para incrustar contenido de sonido en un documento, como música u otras transmisiones de audio.
+
+                La etiqueta &lt;audio&gt; contiene una o más etiquetas &lt;source&gt; con diferentes fuentes de audio. El navegador elegirá la primera fuente que admita.
+                
+                El texto entre las etiquetas &lt;audio&gt; y &lt;/audio&gt; solo se mostrará en navegadores que no admitan el elemento &lt;audio&gt;.
+                
+                Hay tres formatos de audio compatibles en HTML: MP3, WAV y OGG.
+          </p>
+          <p>Ejemplo de uso</p>
+          <div class="codeExampleContainer">
+            <code class="codeExample"> 
+                &lt;audio controls&gt;
+                    &lt;source src="horse.ogg" type="audio/ogg"&gt;
+                    &lt;source src="horse.mp3" type="audio/mpeg"&gt;
+                    Your browser does not support the audio tag.
+                  &lt;/audio&gt;
+            </code>
+          </div>
+        </article>
+      </section>
+      <!-- Fin Noveno bloque -->
+      <!-- Decimo Bloque -->
+      <section id="address" class="bloqueDocumentacion">
+        <article class="docItem">
+          <h3 class="docItemTitle">Adress</h3>
+          <p class="docItemDescription">
+
+            La etiqueta &lt;address&gt; define la información de contacto del autor/propietario de un documento o artículo.
+
+                La información de contacto puede ser una dirección de correo electrónico, URL, dirección física, número de teléfono, identificador de redes sociales, etc.
+                
+                El texto del elemento &lt;address&gt; normalmente se muestra en cursiva y los navegadores siempre agregarán un salto de línea antes y después del elemento &lt;address&gt;.
+          </p>
+          <p>Ejemplo de uso</p>
+          <div class="codeExampleContainer">
+            <code class="codeExample"> 
+                &lt;address&gt;
+                    Written by &lt;a href="mailto:webmaster@example.com"&gt;Jon Doe&lt;/a&gt;.&lt;br&gt;
+                    Visit us at:&lt;br&gt;
+                    Example.com&lt;br&gt;
+                    Box 564, Disneyland&lt;br&gt;
+                    USA
+                    &lt;/address&gt;
+            </code>
+          </div>
+        </article>
+      </section>
+      <!-- Fin Decimo bloque -->
+    </main>
+  </body>
+</html>

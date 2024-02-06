@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+/* Hace que las dimensiones sean mas exactas, para que el padding y el border pasen
+a formar parte del calculo del ancho de la caja y no lo suman posteriormente  */
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: gray;
+}
+
+.container{
+    width: 90%;
+    min-height: 400px;
+    margin: 20px auto;
+    /*padding: 10px;*/
+    border: 10px solid black;
+    position: relative;
+}
+
+.cajaRoja{
+    width: 100px;
+    height: 100px;
+    background-color: #fb7185;
+    padding: 1em;
+    font-weight: 900;
+    color: #f1f5f9;
+    text-align: center;
+    border: 10px solid #e11d48;
+
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.containerFlex1{
+    /* display:flex, convierte el contenedor en una caja flexible */
+    display: flex;
+    /* flex-direction, row, row-reverse, column,column reverse */
+    flex-direction: row;
+    /* justify-content, determina como se distribuyen los elementos en el main axis del contenedor  */
+    justify-content:flex-start ;
+    align-items: center;
+    /* aling-items es para mover las cajas */
+     /* align content, es para acomodar las filas de las cajas */
+    /* gap: 20px; */
+    /* Gap, es para dar un margen cuando los elementos no tienen un justify content */
+    flex-wrap: wrap;
+    
+/* overflow:scroll cuando los elementos se desborden del tamñano del padre */
+}
+
+.containerFlex2{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end ;
+    align-items: center;
+
+}
+
+.containerFlex3{
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+    align-items: center;
+
+}
+
+.containerFlex4{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around ;
+    align-items: center;
+
+}
+
+.containerFlex5{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ;
+    align-items: center;
+
+}
+
+.containerFlex6{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly ;
+    align-items: center;
+
+}
+
+/* Flex col */
+.containerFlexCol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.containerFlexRow2{
+    min-height: unset;
+    height: 300px;
+    
+}
+
+.containerFlexRow2 #cajaRoja1{
+    order: 3;
+}
+
+.containerFlexRow2 #cajaRoja3{
+    order: -1;
+}
+
+.containerFlexRow3{
+    flex-direction: column;
+}
+
+#cajaRoja11{
+    flex-basis: 200px;
+}
+
+#cajaRoja12{
+    flex-basis: 125px;
+}
+
+.containerAside{
+    align-items: stretch;
+    flex-wrap: nowrap;
+    gap: 0;
+    min-height: 100vh;
+}
+
+.containerAside aside{
+    flex-grow: 0;
+    border: 1px solid black;
+}
+
+.containerAside section{
+    flex-grow: 1;
+    border: 1px solid black;
+}

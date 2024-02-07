@@ -1,18 +1,32 @@
-body{
-    background-image:url("https://www.xtrafondos.com/wallpapers/paisaje-digital-en-atardecer-5846.jpg");
+@import "global";
+@import "media";
+
+.hero{
+    background-image: url(https://www.xtrafondos.com/wallpapers/paisaje-digital-en-atardecer-5846.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     min-height: 100vh;
-} 
+    @include flexColumnCenter();
+    text-align: center;
+    
+}
 
-.textoPrincipal{
+.container{
+    width: 100%;
+    @include flexColumnCenter();
+    gap: 40px;
+
     h1{
-        font-size: 100px;
-        color: gray;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        }
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+        font-size: 50px;
+    }
+
+    p{
+        font-family: 'Courier New', Courier, monospace;
+        color: whitesmoke;
+        font-size: 20px;
+    }
 }
 

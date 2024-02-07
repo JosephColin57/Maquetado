@@ -1,0 +1,18 @@
+body{
+    background-image:url("https://www.xtrafondos.com/wallpapers/paisaje-digital-en-atardecer-5846.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+} 
+
+.textoPrincipal{
+    h1{
+        font-size: 100px;
+        color: gray;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        }
+}
+

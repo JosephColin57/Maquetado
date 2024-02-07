@@ -1,0 +1,12 @@
+@import "global";
+@import "post";
+
+body {
+    background-color: $blackcolor;
+}
+
+section{
+    width: 80%;
+    @include flexColumnCenter();
+    gap: 20px;
+}   

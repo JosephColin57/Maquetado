@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Varables con $ */
+
+$blackcolor: black;
+$postSpacing: 20px 20px 20px 20px;
+$colorTextoRojo: #da2525;
+
+
+/* Mixing con @mixin */
+/* y se manda a llamar con @include y el nombre del mixing */
+@mixin flexColumnCenter () {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin btnPost($borderColor){
+    border: 3px solid $borderColor;
+    background-color: transparent;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+}
